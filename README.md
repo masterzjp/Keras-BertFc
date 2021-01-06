@@ -11,7 +11,7 @@
 
 数据预处理：
  wos_labelcontent_label_content2 由来方式：源数据：parent1，parent2,leaf_label,content 处理成：[label1,label2,label3,....][content1,content2,content3....][label1+'\t'+content1,label2+'\t'+content2,.....]
-#######################################################################################################################
+#######################################################
 import csv
 import pickle as pl
 infile = r"D:\01zjp\代码\keras_bert_classification\dataprocess20210106\data\train.csv"
@@ -38,6 +38,7 @@ for line in contents:
 with open(r'D:\01zjp\代码\keras_bert_classification\dataprocess20210106\data\label3_content_labelContent20210106', 'wb') as f:
     pl.dump((label3s,contents,label3_contents), f)
 
+
 # label,content,label_content = pl.load(open(r'D:\01zjp\代码\keras_bert_classification\dataprocess20210106\data\label3_content_labelContent20210106', 'rb'))
 #30726
-##############################################################################################################################################################
+######################################################################################################
