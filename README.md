@@ -39,6 +39,4 @@ with open(r'D:\01zjp\代码\keras_bert_classification\dataprocess20210106\data\l
     pl.dump((label3s,contents,label3_contents), f)
 
 
-# label,content,label_content = pl.load(open(r'D:\01zjp\代码\keras_bert_classification\dataprocess20210106\data\label3_content_labelContent20210106', 'rb'))
-#30726
 ######################################################################################################
